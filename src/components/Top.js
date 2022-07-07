@@ -5,7 +5,7 @@ const Title = styled.h1`
   margin-bottom: 10px;
 `;
 
-const ChangeMovie = styled.div`
+const ChangeChart = styled.div`
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
@@ -40,14 +40,14 @@ function Top() {
   return (
     <div>
       <Title>무비 스케쥴러</Title>
-      <ChangeMovie>
+      <ChangeChart>
         <Span className={color ? "changeColor" : ""} onClick={onClickHandler}>
           무비 차트
         </Span>
         <Span className={color ? "" : "changeColor"} onClick={onClickHandler}>
           개봉 예정작
         </Span>
-      </ChangeMovie>
+      </ChangeChart>
       <Hr />
       <Input type="text" />
     </div>
