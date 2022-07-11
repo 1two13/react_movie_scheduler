@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import App from "../App";
 
 const Title = styled.h1`
   margin-bottom: 10px;
@@ -30,21 +31,27 @@ const Input = styled.input`
   margin-bottom: 7px;
 `;
 
-function Top() {
+function Top({ changeTab }) {
   const [color, setColor] = useState(true);
-
-  const onClickHandler = () => {
+  const onClickHandler = (value) => {
     setColor(!color);
+    changeTab(value);
   };
 
   return (
     <div>
       <Title>무비 스케쥴러</Title>
       <ChangeChart>
-        <Span className={color ? "changeColor" : ""} onClick={onClickHandler}>
+        <Span
+          className={color ? "changeColor" : ""}
+          onClick={() => onClickHandler("0")}
+        >
           무비 차트
         </Span>
-        <Span className={color ? "" : "changeColor"} onClick={onClickHandler}>
+        <Span
+          className={color ? "" : "changeColor"}
+          onClick={() => onClickHandler("1")}
+        >
           개봉 예정작
         </Span>
       </ChangeChart>
