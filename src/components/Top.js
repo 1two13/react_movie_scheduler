@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useState } from "react";
-import App from "../App";
 
 const Title = styled.h1`
   margin-bottom: 10px;

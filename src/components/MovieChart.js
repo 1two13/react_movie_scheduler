@@ -1,6 +1,40 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import movieChartApi from "../api/movieChartApi";
 import Poster from "./Poster";
+
+const MovieBox = styled.div`
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px 140px 0px 150px;
+`;
+
+const MovieInfo = styled.div`
+  margin: 15px 0px 15px 0px;
+  min-width: 200px;
+  min-height: 400px;
+  color: #666666;
+`;
+
+const Rank = styled.div`
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #ff4256;
+`;
+
+const MovieName = styled.div`
+  margin: 10px 0px 7px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+`;
+
+const MovieDetail = styled.div`
+  margin-bottom: 3px;
+  font-size: smaller;
+`;
 
 // 무비 차트를 클릭했을 때 보여지는 화면
 // ../api/dayApi 사용
@@ -27,17 +61,17 @@ function MoiveChart() {
 
   return movie.boxOfficeResult.dailyBoxOfficeList.map((movie) => {
     return (
-      <div key={movie.movieCd} id="movieBox">
-        <Poster movieTitle={movie.movieNm} />
-        <div id="movieInfo">
-          <div id="rank">No.{movie.rank}</div>
-          <div id="movieName">{movie.movieNm}</div>
-          <div id="movieDetail">{movie.openDt} 개봉</div>
-          <div id="movieDetail">
+      <MovieBox key={movie.movieCd}>
+        <MovieInfo>
+          <Rank>No.{movie.rank}</Rank>
+          <Poster movieTitle={movie.movieNm} />
+          <MovieName>{movie.movieNm}</MovieName>
+          <MovieDetail>{movie.openDt} 개봉</MovieDetail>
+          <MovieDetail>
             누적 관객수 {Math.round(movie.audiAcc / 10000)}만 명
-          </div>
-        </div>
-      </div>
+          </MovieDetail>
+        </MovieInfo>
+      </MovieBox>
     );
   });
 }
