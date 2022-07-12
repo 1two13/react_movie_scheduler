@@ -1,6 +1,6 @@
 ## 리액트로 만든 영화를 좋아하는 사람들을 위한 무비 스케쥴러입니다.
 
-[🙇🏻‍♀️ 노션 링크 바로 가기](https://www.notion.so/1two13/react-df093c30af1d460ca6bb7e3b5d6c1230)
+[🙇🏻‍♀️ 노션 링크 바로 가기](https://1two13.notion.site/react-df093c30af1d460ca6bb7e3b5d6c1230)
 
 <br/>
 💡 파일 구조
