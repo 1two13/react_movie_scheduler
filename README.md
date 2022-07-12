@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+## 리액트로 만든 영화를 좋아하는 사람들을 위한 무비 스케쥴러입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[🙇🏻‍♀️ 노션 링크 바로 가기](https://www.notion.so/1two13/react-df093c30af1d460ca6bb7e3b5d6c1230)
 
-## Available Scripts
+<br/>
+💡 파일 구조
 
-In the project directory, you can run:
+    .
+    └── /src
+      └── /api
+          │  └── /comingCharApi.js
+          │  └── /movieChartApi.js
+          │  └── /posterApi.js
+          │
+          └── /components
+              └── /ComingChart.js
+              └── /MovieChart.js
+              └── /Poster.js
+              └── /Top.js
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
+💡 참고 자료
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> 아이디어 참고
 
-### `npm test`
+- [https://movie.daum.net/premovie/theater?flag=C](https://movie.daum.net/premovie/theater?flag=C)
+- [http://www.cgv.co.kr/movies/](http://www.cgv.co.kr/movies/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> API 사용
 
-### `npm run build`
+- 영화 진흥 위원회 [https://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do](https://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do)
+  - 박스 오피스 및 개봉 예정작을 가져오는데 사용했습니다.
+- TMDB [https://developers.themoviedb.org/3/search/search-movies](https://developers.themoviedb.org/3/search/search-movies)
+  - 영화 포스터를 가져오는데 사용했습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> etc
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [https://create-react-app.dev/docs/adding-custom-environment-variables/](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+- [https://ko.reactjs.org/docs/faq-structure.html](https://ko.reactjs.org/docs/faq-structure.html)
+- [https://sezzled.tistory.com/173](https://sezzled.tistory.com/173)
+- [https://reactjs.org/docs/strict-mode.html](https://reactjs.org/docs/strict-mode.html)
+- [https://react.vlpt.us/basic/13-array-insert.html](https://react.vlpt.us/basic/13-array-insert.html)
+- [https://www.taniarascia.com/react-architecture-directory-structure/](https://www.taniarascia.com/react-architecture-directory-structure/)
