@@ -65,9 +65,9 @@ function ComingChart() {
   if (error) return <p>Error!</p>;
 
   filteredList = accList
-    .sort((a, b) => a.openDt - b.openDt)
     .filter((data) => !data.genreAlt.includes("성인물(에로)"))
-    .filter((data) => data.prdtStatNm === "개봉예정");
+    .filter((data) => data.prdtStatNm === "개봉예정")
+    .sort((a, b) => a.openDt - b.openDt);
 
   // console.log(filteredList);
 

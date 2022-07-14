@@ -43,13 +43,13 @@ function Top({ changeTab }) {
       <ChangeChart>
         <Span
           className={color ? "changeColor" : ""}
-          onClick={() => onClickHandler("0")}
+          onClick={() => onClickHandler("movieChart")}
         >
           무비 차트
         </Span>
         <Span
           className={color ? "" : "changeColor"}
-          onClick={() => onClickHandler("1")}
+          onClick={() => onClickHandler("comingChart")}
         >
           개봉 예정작
         </Span>

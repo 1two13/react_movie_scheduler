@@ -1,4 +1,4 @@
-function posterApi({ movieTitle }) {
+function posterApi(movieTitle) {
   const key = process.env.REACT_APP_POSTER_KEY;
   let year = new Date().getFullYear();
 

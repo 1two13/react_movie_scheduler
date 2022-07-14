@@ -22,7 +22,7 @@ function Poster({ movieTitle }) {
   const [poster, setPoster] = useState(null);
 
   useEffect(() => {
-    fetch(posterApi({ movieTitle }))
+    fetch(posterApi(movieTitle))
       .then((res) => res.json())
       .then((poster) => {
         setPoster(poster);

@@ -10,7 +10,7 @@ const Div = styled.div`
 `;
 
 function App() {
-  const [value, setValue] = useState("0");
+  const [value, setValue] = useState("movieChart");
   const changeTabHandler = (value) => {
     // console.log(value);
     setValue(value);
@@ -19,7 +19,7 @@ function App() {
   return (
     <Div>
       <Top changeTab={changeTabHandler} />
-      {value === "0" ? <MovieChart /> : <ComingChart />}
+      {value === "movieChart" ? <MovieChart /> : <ComingChart />}
     </Div>
   );
 }
